@@ -1,3 +1,5 @@
+// https://docs.obsidian.md/Plugins/User+interface/Commands
+
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
@@ -17,13 +19,19 @@ export default class ExamplePlugin extends Plugin {
     searchFiles() {
         const files = this.app.vault.getFiles();
 
+        // var extensions = ['.png', '.PNG', '.JPG', '.jpg', '.jpeg'];
+        var extension = '.png';
+
         console.log('Files:');
         console.log(files);
 
         for (let i = 0; i < files.length; i++) {
-            console.log(files[i].path);
+            let filepath = files[i].path;
+            if (filepath.indexOf(extension) !== -1) {
+                console.log('image:');
+                console.log(filepath);
+            }
         }
-
     }
 
     onLayoutReady() {
