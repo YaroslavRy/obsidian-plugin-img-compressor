@@ -6,7 +6,7 @@ Main goal is to compress images that are inside your Vault without using any thi
 
 ## How it works
 
-## Progress plan
+## Brief overview of the development plan / pipeline
 - [x] Search all files insdide the Vault
 - [ ] Find all images
 - [ ] Ask about the compression algorithm parameters
