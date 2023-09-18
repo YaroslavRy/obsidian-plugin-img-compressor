@@ -1,6 +1,8 @@
 # Obsidian simple image compressor
-Main goal is to compress images that are inside your Vault without using any third-party services and API kyes
+
 **WORK IN PROGRESS**
+
+Main goal is to compress images that are inside your Vault without using any third-party services and API kyes
 
 ## How it works
 
