@@ -1,13 +1,8 @@
 // https://docs.obsidian.md/Plugins/User+interface/Commands
 
-import Compressor from "compressor";
 import { App, Menu, Modal, Notice, Plugin, Setting } from "obsidian";
 
-export default class ExamplePlugin extends Plugin implements Compressor {
-    shout() {
-
-    }
-
+export default class ExamplePlugin extends Plugin {
 
     async onload() {
         console.log('Im alive. What are your intensions today?');
@@ -86,6 +81,7 @@ export default class ExamplePlugin extends Plugin implements Compressor {
                 console.log(filepath);
             }
         }
+        return
     }
 
     onLayoutReady() {
